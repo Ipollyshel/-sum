@@ -1,0 +1,11 @@
+program  n_3;
+  var s, i: integer;
+      a: array[1..10] of integer;
+begin 
+  s:=0;
+  randomize;
+  for i:=1 to 10 do a[i]:=random(100);
+  for i:=1 to 10 do write (a[i],' ');
+  for i:=1 to 10 do s:=s+a[i];
+  writeln('s=', s)
+end.
